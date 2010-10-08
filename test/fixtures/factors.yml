@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  speciman_id: 1
+  j_n: 1
+  j_title: 
+  j_def: MyString
+  pasp_n: 1
+  pasp_title: MyString
+  pasp_reqmt: MyString
+  pasp_def: MyString
+
+two:
+  speciman_id: 1
+  j_n: 1
+  j_title: 
+  j_def: MyString
+  pasp_n: 1
+  pasp_title: MyString
+  pasp_reqmt: MyString
+  pasp_def: MyString

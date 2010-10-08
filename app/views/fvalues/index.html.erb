@@ -1,0 +1,22 @@
+<h1><span style='font-size: 0.5em; font-weight: normal;'><%= t 'shipments.batch_number' %></span> <%= @shipment.batch_number %></h1>
+
+<%= render :partial => @shipment %>
+
+<table>
+  <tr>
+    <th><%= t 'factors.title' %></th>
+    <th><%= t 'fvalues.title' %></th>
+    <th></th>
+  </tr>
+
+<% @fvalues.each do |fvalue| %>
+  <tr>
+    <td><%= link_to fvalue.factor.try(:j_title), edit_speciman_shipment_fvalue_path(@speciman, @shipment, fvalue) %></td>
+    <td><%= fvalue.fvalue %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<!-- %= link_to 'New Fvalue', new_speciman_shipment_fvalue_path(@speciman, @shipment) %  -->

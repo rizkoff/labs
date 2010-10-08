@@ -1,0 +1,49 @@
+<%= form_for([@speciman,@factor]) do |f| %>
+  <% if @factor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@factor.errors.count, "error") %> prohibited this factor from being saved:</h2>
+
+      <ul>
+      <% @factor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :speciman_id, @speciman.title %><br />
+    <%= f.hidden_field :speciman_id %>
+  </div>
+  <div class="field">
+    <%= f.label :j_n, 'Журнал: №п/п' %><br />
+    <%= f.text_field :j_n %>
+  </div>
+  <div class="field">
+    <%= f.label :j_title, 'наименование' %><br />
+    <%= f.text_field :j_title %>
+  </div>
+  <div class="field">
+    <%= f.label :j_def, 'по умолчанию' %><br />
+    <%= f.text_field :j_def %>
+  </div>
+  <div class="field">
+    <%= f.label :pasp_n, 'паспорт: №п/п:' %><br />
+    <%= f.text_field :pasp_n %>
+  </div>
+  <div class="field">
+    <%= f.label :pasp_title, 'наименование:' %><br />
+    <%= f.text_field :pasp_title %>
+  </div>
+  <div class="field">
+    <%= f.label :pasp_reqmt, 'требования по НТД:' %><br />
+    <%= f.text_field :pasp_reqmt %>
+  </div>
+  <div class="field">
+    <%= f.label :pasp_def, 'результаты контроля ОБТК (по умолч):' %><br />
+    <%= f.text_field :pasp_def %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

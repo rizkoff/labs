@@ -1,0 +1,47 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+
+  date:
+    formats:
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%d-%m-%Y"
+      short: "%b %d"
+      long: "%B %d, %Y"
+      
+    day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+      
+    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
+    abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    # Used in date_select and datime_select.
+    order: [ :year, :month, :day ]
+
+  specimen:
+    save: "save Specimen"
+    nav: "Specimen"
+    title: "Title"
+    new: "Specimen"
+    nav-new: "add Speciman to catalog"
+    listing: "Listing Specimen"
+  shipments:
+    nav: 'shipments'
+    nav-new: 'new shipment'
+    batch_number: 'batch #'
+    check_number: 'control #'
+    manufdt: 'manufactured at'
+    releasedt: 'released at'
+    expiredt: 'exires at'
+  factors:
+    title: 'factors'
+  fvalues:
+    title: 'values'
+  nav:
+    Show: 'show'
+    Edit: 'Edit'
+    Destroy: 'Destroy'
+    Back: 'Back'
+    del-confirm:  'Are you sure?'

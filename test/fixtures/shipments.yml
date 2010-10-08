@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  speciman_id: 1
+  batch_number: MyString
+  check_number: 1
+  manuf_date: 2010-09-25
+  release_date: 2010-09-25
+  expire_date: 2010-09-25
+
+two:
+  speciman_id: 1
+  batch_number: MyString
+  check_number: 1
+  manuf_date: 2010-09-25
+  release_date: 2010-09-25
+  expire_date: 2010-09-25

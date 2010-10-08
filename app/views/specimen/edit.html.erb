@@ -1,0 +1,7 @@
+<h1>Editing speciman</h1>
+
+<%= render 'form' %>
+
+<%= link_to (t 'nav.Show'), @speciman %> |
+<%= link_to (t 'nav.Back'), specimen_path %> |
+<%= link_to (t 'nav.Destroy'), @speciman, :confirm => (t 'nav.del-confirm'), :method => :delete %>

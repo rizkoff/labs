@@ -1,0 +1,48 @@
+<p ><%= '' %></p>
+
+<p>
+  <b></b>
+  <%= '' %>
+</p>
+
+<div class='yy lbl' id='batch_label'>
+  Серия № ________________________
+</div>
+<div class='yy val' id='batch_num'>
+  <%= @shipment.batch_number %>
+</div>
+
+<div class='yy lbl' id='check_label'>
+  Контрольный номер ______________
+</div>
+<div class='yy val' id='check_num'>
+  <%= @shipment.check_number %>
+</div>
+
+<div class='yy lbl' id='manufdt_label'>
+  Дата изготовления __________________________
+</div>
+<div class='yy val' id='manufdt_val'>
+  <%= Russian::strftime(@shipment.manufdt, "%d %B %Y") %>
+</div>
+
+
+
+<p>
+  <b><%= '' %></b>
+  <%= '' %>
+</p>
+
+<p>
+  <b><%= '' %></b>
+  <%= '' %>
+</p>
+
+
+
+<table class='ppt'>
+<tr><th>№ пп</th><th>Наименование показателей</th><th>Требования по НТД</th><th>Результаты контроля ОБТК</th></tr>
+
+<tr><td>1.</td><td>Описание</td><td>Пористая масса, порошкообразная или в виде таблетки светло-желтого цвета. Гигроскопична.</td><td>Пористая масса, порошкообразная или в виде таблетки светло-желтого цвета. Гигроскопична.</td></tr>
+</table>
+

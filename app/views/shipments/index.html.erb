@@ -1,0 +1,31 @@
+<h1><%= @speciman.title %> <span style='font-size: 0.5em; font-weight: normal;'><%= t 'shipments.nav' %></span></h1>
+
+<table>
+  <tr>
+    <th><%= t 'shipments.batch_number' %></th>
+    <th><%= t 'shipments.check_number' %></th>
+    <th><%= t 'shipments.manufdt' %></th>
+    <th><%= t 'shipments.releasedt' %></th>
+    <th><%= t 'shipments.expiredt' %></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shipments.each do |shipment| %>
+  <tr>
+    <td><%= shipment.batch_number %></td>
+    <td><%= shipment.check_number %></td>
+    <td><%= shipment.manufdt %></td>
+    <td><%= shipment.releasedt %></td>
+    <td><%= shipment.expiredt %></td>
+    <td><%= link_to 'Show', [@speciman, shipment] %></td>
+    <td><%= link_to 'Edit', edit_speciman_shipment_path(shipment.speciman, shipment) %></td>
+    <td><%= link_to 'passport', passport_path(shipment.speciman, shipment), :target => '_blank' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to (t 'shipments.nav-new'), new_speciman_shipment_path(@speciman) %>

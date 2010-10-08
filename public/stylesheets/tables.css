@@ -1,0 +1,22 @@
+table tr.L2 th {border-bottom: none; background-color: #999; letter-spacing: 0.4em; }
+table tr th {border-bottom: solid 1px #777; background-color: #ccc;}
+table tr td {border-bottom: solid 1px #bbb; }
+table tr.fz td {border-bottom: solid 1px #c77; }
+table tr *.nc {border-left: solid 1px #999; }
+
+table.show tr td.ri {text-align: right;}
+
+table.ppt {width:1000px; top:250px; left:30px; position:fixed; }
+table.ppt, table.ppt tr td, table.ppt tr th {border: solid 1px #000; background-color: #fff; padding: 0; margin: 0; border-collapse:collapse;}
+table.ppt tr td, table.ppt tr th { padding:.2em .5em; vertical-align:top; font-weight:normal; text-align: left;}
+
+div.yy {border: none/*1px solid red*/; text-align:left; position:fixed; }
+div.lbl {padding: 0.5em 0; }
+div.val {font-size: 1.4em; }
+
+div#batch_label {top:50px; left:270px; }
+div#batch_num   {top:50px; left:430px; }
+div#check_label {top:90px; left:270px; }
+div#check_num   {top:90px; left:430px; }
+div#manufdt_label {top:50px; left:670px; }
+div#manufdt_val   {top:50px; left:830px; }

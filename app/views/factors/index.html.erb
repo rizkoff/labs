@@ -1,0 +1,36 @@
+<h1><%= @speciman.title %> <span style='font-size: 0.5em; font-weight: normal;'>показатели</span></h1>
+
+<table>
+  <tr class='L2'><th colspan='3'>журнал выпуска</th><th colspan='4' class='nc'>паспорт</th></tr>
+  <tr>
+    <th>№ п/п</th>
+    <th>наименование</th>
+    <th>по умолчанию</th>
+    <th class='nc'>№ п/п</th>
+    <th>наименование</th>
+    <th>требования по НТД</th>
+    <th>результаты контроля ОБТК</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @speciman.factors.each do |factor| %>
+  <tr>
+    <td><%= factor.j_n %></td>
+    <td><%= factor.j_title %></td>
+    <td><%= factor.j_def %></td>
+    <td class='nc'><%= factor.pasp_n %></td>
+    <td><%= factor.pasp_title %></td>
+    <td><%= factor.pasp_reqmt %></td>
+    <td><%= factor.pasp_def %></td>
+    <td><%= link_to 'Show', [@speciman, factor] %></td>
+    <td><%= link_to 'Edit', edit_speciman_factor_path(factor.speciman,factor) %></td>
+    <td><%= link_to 'Destroy', speciman_factor_path(@speciman, factor), :method => :delete, :confirm => 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "добавить показатель к шаблону '#{@speciman.title}'", new_speciman_factor_path(@speciman) %>

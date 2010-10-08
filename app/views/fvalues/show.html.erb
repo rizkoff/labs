@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Factor:</b>
+  <%= @fvalue.factor_id %>
+</p>
+
+<p>
+  <b>Shipment:</b>
+  <%= @fvalue.shipment_id %>
+</p>
+
+<p>
+  <b>Fvalue:</b>
+  <%= @fvalue.fvalue %>
+</p>
+
+
+<%= link_to 'Edit', edit_speciman_shipment_fvalue_path(@speciman, @shipment, @fvalue) %> |
+<%= link_to 'Back', speciman_shipment_fvalues_path(@speciman, @shipment) %>

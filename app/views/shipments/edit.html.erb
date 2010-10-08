@@ -1,0 +1,7 @@
+<h1>Editing shipment</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', [@speciman, @shipment] %> |
+<%= link_to 'Back', speciman_shipments_path(@speciman) %> |
+<%= link_to 'Destroy', [@speciman, @shipment], :confirm => 'Are you sure?', :method => :delete %>

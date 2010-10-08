@@ -1,0 +1,29 @@
+<%= form_for([@speciman,@shipment,@fvalue]) do |f| %>
+  <% if @fvalue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fvalue.errors.count, "error") %> prohibited this fvalue from being saved:</h2>
+
+      <ul>
+      <% @fvalue.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :factor_id %><br />
+    <%= f.text_field :factor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :shipment_id %><br />
+    <%= f.text_field :shipment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fvalue %><br />
+    <%= f.text_field :fvalue %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

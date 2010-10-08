@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Препарат:</b>
+  <%= @factor.speciman.title %>
+</p>
+
+<p>
+  <b>журнал: №п/п:</b>
+  <%= @factor.j_n %>
+</p>
+
+<p>
+  <b>наименование:</b>
+  <%= @factor.j_title %>
+</p>
+
+<p>
+  <b>по умолчанию:</b>
+  <%= @factor.j_def %>
+</p>
+
+<p>
+  <b>паспорт: №п/п:</b>
+  <%= @factor.pasp_n %>
+</p>
+
+<p>
+  <b>наименование:</b>
+  <%= @factor.pasp_title %>
+</p>
+
+<p>
+  <b>требования по НТД:</b>
+  <%= @factor.pasp_reqmt %>
+</p>
+
+<p>
+  <b>результаты контроля ОБТК (по умолч):</b>
+  <%= @factor.pasp_def %>
+</p>
+
+
+<%= link_to 'Edit', edit_speciman_factor_path(@speciman, @factor) %> |
+<%= link_to 'Back', speciman_factors_path(@speciman) %>

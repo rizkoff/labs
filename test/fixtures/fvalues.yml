@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  factor_id: 1
+  shipment_id: 1
+  fvalue: MyString
+
+two:
+  factor_id: 1
+  shipment_id: 1
+  fvalue: MyString

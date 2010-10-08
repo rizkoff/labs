@@ -1,0 +1,44 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+    day_names: [воскресенье, понедельник, вторник, среда, четверг, пятница, суббота]
+    standalone_day_names: [Воскресенье, Понедельник, Вторник, Среда, Четверг, Пятница, Суббота]
+    abbr_day_names: [Вс, Пн, Вт, Ср, Чт, Пт, Сб]
+    month_names: [~, января, февраля, марта, апреля, мая, июня, июля, августа, сентября, октября, ноября, декабря]
+    standalone_month_names: [~, Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь]
+    abbr_month_names: [~, янв., февр., марта, апр., мая, июня, июля, авг., сент., окт., нояб., дек.]
+    standalone_abbr_month_names: [~, янв., февр., март, апр., май, июнь, июль, авг., сент., окт., нояб., дек.]
+    order: [ :day, :month, :year ]
+
+  specimen:
+    save: "сохранить"
+    nav: "Препараты"
+    title: "наименование"
+    new: "новый препарат"
+    nav-new: "новый препарат в каталог"
+    listing: "Каталог препаратов"
+  shipments:
+    nav: 'серии'
+    nav-new: 'новая серия'
+    batch_number: '№ серии'
+    check_number: 'контрольный №'
+    manufdt: 'дата изготовления'
+    releasedt: 'дата выпуска'
+    expiredt: 'срок действия'
+  factors:
+    title: 'показатели'
+  fvalues:
+    title: 'значения'
+  nav:
+    Show: 'показать'
+    Edit: 'изменить'
+    Destroy: 'удалить'
+    Back: 'назад'
+    del-confirm: 'удалить?'
