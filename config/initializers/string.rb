@@ -1,7 +1,7 @@
 # coding: utf-8
 class String
-  @@abc    ||= Parm.find_by_title('abc.ru').val
-  @@abccap ||= Parm.find_by_title('ABC.ru').val
+  @@abc    ||= Prm.find_by_title('abc.ru').pval
+  @@abccap ||= Prm.find_by_title('ABC.ru').pval
 
   def self.abccap
     @@abccap

@@ -1,10 +1,10 @@
-<%= form_for(@parm) do |f| %>
-  <% if @parm.errors.any? %>
+<%= form_for(@prm) do |f| %>
+  <% if @prm.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@parm.errors.count, "error") %> prohibited this parm from being saved:</h2>
+      <h2><%= pluralize(@prm.errors.count, "error") %> prohibited this prm from being saved:</h2>
 
       <ul>
-      <% @parm.errors.full_messages.each do |msg| %>
+      <% @prm.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -16,8 +16,8 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :val %><br />
-    <%= f.text_field :val, :size => 90 %>
+    <%= f.label :pval %><br />
+    <%= f.text_field :pval %>
   </div>
   <div class="actions">
     <%= f.submit %>

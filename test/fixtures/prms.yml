@@ -2,8 +2,8 @@
 
 one:
   title: MyString
-  val: MyString
+  pval: MyString
 
 two:
   title: MyString
-  val: MyString
+  pval: MyString
