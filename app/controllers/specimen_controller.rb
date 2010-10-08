@@ -44,7 +44,7 @@ class SpecimenController < ApplicationController
 
     respond_to do |format|
       if @speciman.save
-        format.html { redirect_to(@speciman, :notice => 'Speciman was successfully created.') }
+        format.html { redirect_to(specimen_path, :notice => (t 'specimen.notice.created')) }
         format.xml  { render :xml => @speciman, :status => :created, :location => @speciman }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class SpecimenController < ApplicationController
 
     respond_to do |format|
       if @speciman.update_attributes(params[:speciman])
-        format.html { redirect_to(@speciman, :notice => 'Speciman was successfully updated.') }
+        format.html { redirect_to(specimen_path, :notice => (t 'specimen.notice.saved')) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

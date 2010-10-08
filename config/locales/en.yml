@@ -22,6 +22,11 @@ en:
     order: [ :year, :month, :day ]
 
   specimen:
+    error-msg: 'errors prohibited this entry from being saved:'
+    notice:
+      saved: 'Speciman was successfully updated.'
+      created: 'Speciman was successfully created.'
+    priord: "ordering priority"
     save: "save Specimen"
     nav: "Specimen"
     title: "Title"
@@ -41,8 +46,10 @@ en:
   fvalues:
     title: 'values'
   nav:
+    Search: 'Search'
     Show: 'show'
     Edit: 'Edit'
+    Editing: 'Editing'
     Destroy: 'Destroy'
     Back: 'Back'
     del-confirm:  'Are you sure?'

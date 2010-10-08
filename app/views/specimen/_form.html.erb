@@ -1,7 +1,7 @@
 <%= form_for(@speciman) do |f| %>
   <% if @speciman.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@speciman.errors.count, "error") %> prohibited this speciman from being saved:</h2>
+      <h2><%= t 'specimen.error-msg' %> <%= pluralize(@speciman.errors.count, "") %></h2>
 
       <ul>
       <% @speciman.errors.full_messages.each do |msg| %>
@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :title, (t 'specimen.title') %><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :size => 125 %>
   </div>
   <div class="field">
     <%= f.label :priord, (t 'specimen.priord') %><br />
-    <%= f.text_field :priord %>
+    <%= f.text_field :priord, :size => 4 %>
   </div>
   <div class="actions">
     <%= f.submit :value => (t 'specimen.save') %>

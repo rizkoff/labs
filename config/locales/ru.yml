@@ -19,6 +19,11 @@ ru:
     order: [ :day, :month, :year ]
 
   specimen:
+    error-msg: 'ошибок при сохранении этой записи:'
+    notice:
+      saved: 'Запись о препарате сохранена.'
+      created: 'Запись о препарате создана.'
+    priord: "приоритет при сортировке"
     save: "сохранить"
     nav: "Препараты"
     title: "наименование"
@@ -38,8 +43,10 @@ ru:
   fvalues:
     title: 'значения'
   nav:
+    Search: 'поиск'
     Show: 'показать'
     Edit: 'изменить'
+    Editing: 'препарат: изменение'
     Destroy: 'удалить'
     Back: 'назад'
     del-confirm: 'удалить?'

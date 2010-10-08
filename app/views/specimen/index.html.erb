@@ -2,7 +2,7 @@
 
 <% form_tag specimen_path, :method => :get do %>
   <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag "search", :name => nil %>
+  <%= submit_tag (t "nav.Search"), :name => nil %>
 <% end -%>
 
 <table>
@@ -19,7 +19,6 @@
     <td><%= link_to (speciman.title), edit_speciman_path(speciman) %></td>
     <td><%= link_to (t 'shipments.nav'), speciman_shipments_path(speciman) %></td>
     <td><%= link_to (t 'factors.title'), speciman_factors_path(speciman) %></td>
-    <!-- %= link_to (t 'nav.Show'), speciman %  -->
     <td><%= nil %></td>
   </tr>
 <% end %>

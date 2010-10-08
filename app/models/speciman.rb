@@ -1,4 +1,8 @@
 class Speciman < ActiveRecord::Base
+
+  validates_presence_of :title, :priord
+  validates_uniqueness_of :title
+
   def self.abc
     Prm.find_by_title('abc.ru').pval
   end
@@ -27,7 +31,6 @@ class Speciman < ActiveRecord::Base
 
     def upcase_title
       self.title_upcased = Speciman.upcase_ru(title)
-      # self.title_upcased = (title.blank?)? nil : upcase_ru(title)
     end
 
 end
