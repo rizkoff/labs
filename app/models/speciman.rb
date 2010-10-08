@@ -26,7 +26,7 @@ class Speciman < ActiveRecord::Base
   private
 
     def upcase_title
-      self.title_upcased = upcase_ru(title)
+      self.title_upcased = Speciman.upcase_ru(title)
       # self.title_upcased = (title.blank?)? nil : upcase_ru(title)
     end
 
