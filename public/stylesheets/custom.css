@@ -9,15 +9,17 @@ body {
 
 header {
   padding-top: 20px;
+  padding-left: 40px;
 }
 
 header img {
-  padding: 1em;
-  background: #ddd;
+  /*padding: 1em;
+  background: #ddd;*/
 }
 
 section {
-  margin-top: 1em;
+  /*margin-top: 1em;*/
+  margin-top: -20px;
   font-size: 120%;
   padding: 20px;
   background: #eee;
@@ -30,12 +32,12 @@ section h1 {
 /* Links */
 
 a {
-  color: #09c;
+  color: #069;
   text-decoration: none;
 }
 
 a:hover {
-  color: #069;
+  color: #3b9;
   text-decoration: underline;
 }
 
